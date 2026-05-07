@@ -7,42 +7,42 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Fira+Code:wght@400;500;600&family=Spectral:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0f1117;--surface:#161b27;--surface2:#1e2535;--surface3:#242d42;--border:#2a3650;--border2:#344060;--text:#d4dae8;--text-muted:#7a8aaa;--text-dim:#4a5878;--accent:#4f9cf9;--accent2:#38c4a0;--accent3:#f5a623;--accent4:#e05c7a;--accent5:#a78bfa;--math-bg:#0a0f1a;--code-bg:#0d1320;--highlight:#1a2540;}
+:root{--bg:#ffffff;--surface:#f8fafc;--surface2:#f1f5f9;--surface3:#e2e8f0;--border:#cbd5e1;--border2:#94a3b8;--text:#0f172a;--text-muted:#475569;--text-dim:#94a3b8;--accent:#1d4ed8;--accent2:#0f766e;--accent3:#b45309;--accent4:#be123c;--accent5:#6d28d9;--math-bg:#f8fafc;--code-bg:#f1f5f9;--highlight:#dbeafe;}
 *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
 body{font-family:'Spectral',Georgia,serif;background:var(--bg);color:var(--text);font-size:18px;line-height:1.8;overflow-x:hidden;}
 #progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0%;z-index:9999;transition:width .08s linear;}
-#sidenav{position:fixed;left:0;top:0;bottom:0;width:224px;background:var(--surface);border-right:1px solid var(--border);padding:28px 0;overflow-y:auto;z-index:50;}
+#sidenav{position:fixed;left:0;top:0;bottom:0;width:224px;background:#f8fafc;border-right:1px solid var(--border);padding:28px 0;overflow-y:auto;z-index:50;}
 #sidenav .nav-logo{padding:0 20px 18px;border-bottom:1px solid var(--border);margin-bottom:14px;font-family:'Fira Code',monospace;font-size:0.72rem;color:var(--accent);letter-spacing:.06em;}
-#sidenav a{display:block;padding:6px 20px;font-size:0.76rem;color:var(--text-muted);text-decoration:none;letter-spacing:.02em;border-left:2px solid transparent;transition:all .15s;font-family:'Spectral',serif;}
+#sidenav a{display:block;padding:6px 20px;font-size:0.76rem;color:#475569;text-decoration:none;letter-spacing:.02em;border-left:2px solid transparent;transition:all .15s;font-family:'Spectral',serif;}
 #sidenav a:hover{color:var(--text);border-left-color:var(--accent);background:var(--surface2);}
 #sidenav a.active{color:var(--accent);border-left-color:var(--accent);background:var(--highlight);}
-#sidenav .nav-section{padding:12px 20px 3px;font-size:0.6rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-dim);font-family:'Fira Code',monospace;}
+#sidenav .nav-section{padding:12px 20px 3px;font-size:0.6rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#94a3b8;font-family:'Fira Code',monospace;}
 main{margin-left:224px;min-height:100vh;}
-.hero{background:var(--surface);border-bottom:1px solid var(--border);padding:80px 64px 60px;position:relative;overflow:hidden;}
+.hero{background:#1e3a5f;border-bottom:1px solid var(--border);padding:80px 64px 60px;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(79,156,249,.07) 0%,transparent 65%),radial-gradient(ellipse at 20% 80%,rgba(56,196,160,.05) 0%,transparent 55%);pointer-events:none;}
-.hero-chip{display:inline-block;background:rgba(79,156,249,.12);border:1px solid rgba(79,156,249,.3);color:var(--accent);font-size:0.7rem;letter-spacing:.12em;text-transform:uppercase;font-family:'Fira Code',monospace;padding:5px 14px;border-radius:2px;margin-bottom:24px;}
-.hero h1{font-family:'Bitter',serif;font-size:clamp(2.2rem,4vw,3.4rem);font-weight:700;line-height:1.15;max-width:820px;margin-bottom:22px;color:#eef2ff;}
+.hero-chip{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);color:#ffffff;font-size:0.7rem;letter-spacing:.12em;text-transform:uppercase;font-family:'Fira Code',monospace;padding:5px 14px;border-radius:2px;margin-bottom:24px;}
+.hero h1{font-family:'Bitter',serif;font-size:clamp(2.2rem,4vw,3.4rem);font-weight:700;line-height:1.15;max-width:820px;margin-bottom:22px;color:#0f172a;}
 .hero h1 span{color:var(--accent);}
 .hero-sub{font-size:1.05rem;color:var(--text-muted);max-width:660px;line-height:1.75;margin-bottom:36px;}
-.hero-meta{display:flex;gap:28px;flex-wrap:wrap;font-size:0.78rem;color:var(--text-dim);font-family:'Fira Code',monospace;border-top:1px solid var(--border);padding-top:20px;}
+.hero-meta{display:flex;gap:28px;flex-wrap:wrap;font-size:0.78rem;color:#94a3b8;font-family:'Fira Code',monospace;border-top:1px solid var(--border);padding-top:20px;}
 .hero-meta strong{color:var(--accent2);}
 .section{max-width:880px;margin:0 auto;padding:72px 64px;border-bottom:1px solid var(--border);}
 .section:last-child{border-bottom:none;}
 .section-header{display:flex;align-items:center;gap:14px;margin-bottom:36px;}
 .section-num{font-family:'Fira Code',monospace;font-size:0.72rem;color:var(--accent);background:rgba(79,156,249,.1);border:1px solid rgba(79,156,249,.25);padding:4px 10px;border-radius:2px;flex-shrink:0;}
-h2{font-family:'Bitter',serif;font-size:1.75rem;font-weight:700;color:#eef2ff;line-height:1.25;}
+h2{font-family:'Bitter',serif;font-size:1.75rem;font-weight:700;color:#0f172a;line-height:1.25;}
 h3{font-family:'Bitter',serif;font-size:1.1rem;font-weight:600;color:var(--accent2);margin:40px 0 14px;display:flex;align-items:center;gap:10px;}
 h3::before{content:'';display:block;width:18px;height:2px;background:var(--accent2);flex-shrink:0;}
 h4{font-size:0.88rem;font-weight:600;color:var(--accent3);margin:28px 0 10px;font-family:'Fira Code',monospace;letter-spacing:.05em;text-transform:uppercase;}
 p{margin-bottom:18px;color:var(--text);}
 p+p{text-indent:1.2em;}
-.math-block{background:var(--math-bg);border:1px solid var(--border);border-left:3px solid var(--accent5);border-radius:4px;padding:24px 28px;margin:28px 0;overflow-x:auto;}
+.math-block{background:#f8fafc;border:1px solid var(--border);border-left:3px solid var(--accent5);border-radius:4px;padding:24px 28px;margin:28px 0;overflow-x:auto;}
 .math-block .math-label{font-family:'Fira Code',monospace;font-size:0.68rem;color:var(--accent5);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;display:block;}
-.math-block .formula{font-family:'Fira Code',monospace;font-size:0.88rem;color:#c4d0f0;line-height:2;white-space:pre;}
+.math-block .formula{font-family:'Fira Code',monospace;font-size:0.88rem;color:#1e3a5f;line-height:2;white-space:pre;}
 .math-block .math-note{margin-top:14px;padding-top:12px;border-top:1px solid var(--border);font-size:0.83rem;color:var(--text-muted);line-height:1.65;font-style:italic;font-family:'Spectral',serif;}
-code{font-family:'Fira Code',monospace;background:var(--code-bg);color:#a5c3ff;padding:2px 7px;border-radius:3px;font-size:0.85em;border:1px solid var(--border);}
+code{font-family:'Fira Code',monospace;background:#eff6ff;color:#1d4ed8;padding:2px 7px;border-radius:3px;font-size:0.85em;border:1px solid var(--border);}
 .data-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:0.84rem;font-family:'Fira Code',monospace;}
-.data-table thead tr{background:var(--surface3);}
+.data-table thead tr{background:#e2e8f0;}
 .data-table th{padding:10px 14px;text-align:left;color:var(--accent);font-weight:600;font-size:0.72rem;letter-spacing:.06em;text-transform:uppercase;border-bottom:2px solid var(--border2);}
 .data-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text);vertical-align:top;}
 .data-table tr:last-child td{border-bottom:none;}
@@ -53,34 +53,34 @@ code{font-family:'Fira Code',monospace;background:var(--code-bg);color:#a5c3ff;p
 .label-ok{color:var(--accent2);font-weight:600;}
 .label-u{color:var(--accent3);font-style:italic;}
 .callout{border-radius:4px;padding:22px 26px;margin:28px 0;border-left:3px solid;}
-.callout-intuition{background:rgba(56,196,160,.07);border-color:var(--accent2);}
-.callout-warning{background:rgba(224,92,122,.07);border-color:var(--accent4);}
-.callout-insight{background:rgba(79,156,249,.07);border-color:var(--accent);}
-.callout-example{background:rgba(245,166,35,.07);border-color:var(--accent3);}
+.callout-intuition{background:#f0fdfa;border-color:var(--accent2);}
+.callout-warning{background:#fff1f2;border-color:var(--accent4);}
+.callout-insight{background:#eff6ff;border-color:var(--accent);}
+.callout-example{background:#fffbeb;border-color:var(--accent3);}
 .callout-label{font-family:'Fira Code',monospace;font-size:0.68rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px;display:block;font-weight:600;}
 .callout-intuition .callout-label{color:var(--accent2);}
 .callout-warning .callout-label{color:var(--accent4);}
 .callout-insight .callout-label{color:var(--accent);}
 .callout-example .callout-label{color:var(--accent3);}
 .callout p{margin:0;font-size:0.93rem;color:var(--text-muted);text-indent:0;}
-blockquote{border-left:3px solid var(--accent5);margin:36px 0;padding:20px 28px;background:rgba(167,139,250,.06);font-style:italic;color:var(--text-muted);font-size:1.05rem;line-height:1.75;}
-blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:0.75rem;font-family:'Fira Code',monospace;color:var(--text-dim);letter-spacing:.06em;}
+blockquote{border-left:3px solid var(--accent5);margin:36px 0;padding:20px 28px;background:#faf5ff;font-style:italic;color:var(--text-muted);font-size:1.05rem;line-height:1.75;}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:0.75rem;font-family:'Fira Code',monospace;color:#94a3b8;letter-spacing:.06em;}
 /* illustration boxes */
-.illus{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:28px;margin:28px 0;}
-.illus-title{font-family:'Fira Code',monospace;font-size:0.7rem;color:var(--text-dim);letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;border-bottom:1px solid var(--border);padding-bottom:10px;}
-.illus-caption{font-size:0.78rem;color:var(--text-dim);margin-top:14px;line-height:1.5;font-style:italic;}
+.illus{background:#f8fafc;border:1px solid var(--border);border-radius:6px;padding:28px;margin:28px 0;}
+.illus-title{font-family:'Fira Code',monospace;font-size:0.7rem;color:#94a3b8;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;border-bottom:1px solid var(--border);padding-bottom:10px;}
+.illus-caption{font-size:0.78rem;color:#94a3b8;margin-top:14px;line-height:1.5;font-style:italic;}
 /* node graph */
 .dag{display:flex;gap:0;align-items:center;flex-wrap:wrap;justify-content:center;}
 .dag-col{display:flex;flex-direction:column;align-items:center;gap:12px;padding:0 16px;}
-.dag-label{font-family:'Fira Code',monospace;font-size:0.62rem;color:var(--text-dim);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;}
+.dag-label{font-family:'Fira Code',monospace;font-size:0.62rem;color:#94a3b8;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;}
 .node{border-radius:6px;padding:10px 16px;font-family:'Fira Code',monospace;font-size:0.78rem;text-align:center;min-width:90px;border:1px solid;line-height:1.4;}
 .node-root{background:rgba(79,156,249,.12);border-color:var(--accent);color:var(--accent);}
 .node-child{background:rgba(56,196,160,.12);border-color:var(--accent2);color:var(--accent2);}
 .node-target{background:rgba(224,92,122,.15);border-color:var(--accent4);color:var(--accent4);}
-.dag-arrow{color:var(--text-dim);font-size:1.4rem;align-self:center;}
+.dag-arrow{color:#94a3b8;font-size:1.4rem;align-self:center;}
 /* column vis */
 .col-vis{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;}
-.col-box{background:var(--surface3);border:1px solid var(--border);border-radius:4px;padding:14px;min-width:110px;}
+.col-box{background:#e2e8f0;border:1px solid var(--border);border-radius:4px;padding:14px;min-width:110px;}
 .col-box .col-name{font-family:'Fira Code',monospace;font-size:0.68rem;color:var(--accent);margin-bottom:10px;letter-spacing:.06em;}
 .col-box .cell{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:0.8rem;}
 .col-box .cell-val{font-family:'Fira Code',monospace;font-size:0.76rem;color:var(--text-muted);min-width:36px;}
@@ -88,83 +88,83 @@ blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:0.75re
 .col-box .cell-embed{font-family:'Fira Code',monospace;font-size:0.62rem;color:var(--accent5);}
 /* attention vis */
 .qkv-row{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap;}
-.qkv-box{flex:1;min-width:140px;background:var(--surface3);border:1px solid var(--border);border-radius:4px;padding:14px;}
+.qkv-box{flex:1;min-width:140px;background:#e2e8f0;border:1px solid var(--border);border-radius:4px;padding:14px;}
 .qkv-box .qkv-label{font-family:'Fira Code',monospace;font-size:0.68rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;display:block;}
 .qkv-box .qkv-val{font-family:'Fira Code',monospace;font-size:0.78rem;color:var(--text-muted);line-height:1.8;}
 .attn-heat{display:grid;gap:3px;margin:12px 0;}
 .heat-cell{padding:8px;border-radius:3px;font-family:'Fira Code',monospace;font-size:0.72rem;text-align:center;}
 /* step cards */
 .step-cards{display:flex;flex-direction:column;gap:14px;margin:24px 0;}
-.step-card{background:var(--surface2);border:1px solid var(--border);border-radius:6px;overflow:hidden;display:flex;}
-.step-badge{width:66px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:14px 8px;background:var(--surface3);border-right:1px solid var(--border);}
+.step-card{background:#f8fafc;border:1px solid var(--border);border-radius:6px;overflow:hidden;display:flex;}
+.step-badge{width:66px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:14px 8px;background:#e2e8f0;border-right:1px solid var(--border);}
 .step-badge .s-num{font-family:'Fira Code',monospace;font-weight:600;font-size:1.1rem;color:var(--accent);}
 .step-badge .s-icon{font-size:1.2rem;}
 .step-body{padding:16px 20px;flex:1;}
-.step-body .step-title{font-family:'Bitter',serif;font-weight:600;font-size:1rem;color:#eef2ff;margin-bottom:5px;}
+.step-body .step-title{font-family:'Bitter',serif;font-weight:600;font-size:1rem;color:#0f172a;margin-bottom:5px;}
 .step-body p{font-size:0.88rem;color:var(--text-muted);margin-bottom:0;text-indent:0;}
 /* compare grid */
 .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0;}
-.compare-card{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:18px;}
+.compare-card{background:#f8fafc;border:1px solid var(--border);border-radius:6px;padding:18px;}
 .compare-card h4{margin-top:0;font-size:0.78rem;}
 .pros-label{font-size:0.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-family:'Fira Code',monospace;margin-bottom:8px;display:block;}
 .pros .pros-label{color:var(--accent2);}
 .cons .pros-label{color:var(--accent4);}
 .compare-card ul{padding-left:16px;}
 .compare-card li{font-size:0.82rem;color:var(--text-muted);margin-bottom:5px;line-height:1.5;}
-.compare-card .pros li{color:#7dcfb6;}
-.compare-card .cons li{color:#d88097;}
+.compare-card .pros li{color:#0f766e;}
+.compare-card .cons li{color:#be123c;}
 /* scoring */
-.scoring-option{background:var(--surface2);border:1px solid var(--border);border-radius:6px;margin:24px 0;overflow:hidden;}
-.scoring-header{padding:16px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;}
+.scoring-option{background:#f8fafc;border:1px solid var(--border);border-radius:6px;margin:24px 0;overflow:hidden;}
+.scoring-header{padding:16px 22px;border-bottom:1px solid var(--border);background:#f1f5f9;display:flex;align-items:center;gap:12px;}
 .scoring-badge{font-family:'Fira Code',monospace;font-size:0.7rem;font-weight:600;padding:4px 12px;border-radius:2px;letter-spacing:.08em;}
 .option-1 .scoring-badge{background:rgba(79,156,249,.15);color:var(--accent);border:1px solid rgba(79,156,249,.3);}
 .option-2 .scoring-badge{background:rgba(167,139,250,.15);color:var(--accent5);border:1px solid rgba(167,139,250,.3);}
 .option-3 .scoring-badge{background:rgba(56,196,160,.15);color:var(--accent2);border:1px solid rgba(56,196,160,.3);}
-.scoring-title{font-family:'Bitter',serif;font-weight:600;font-size:1rem;color:#eef2ff;}
+.scoring-title{font-family:'Bitter',serif;font-weight:600;font-size:1rem;color:#0f172a;}
 .scoring-body{padding:22px;}
-.scoring-body p{font-size:0.9rem;text-indent:0;}
+.scoring-body p{font-size:0.9rem;text-indent:0;color:#334155;}
 /* pct */
 .pct{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.84rem;}
-.pct th{padding:9px 14px;font-size:0.7rem;letter-spacing:.08em;text-transform:uppercase;font-family:'Fira Code',monospace;background:var(--surface3);border-bottom:2px solid var(--border2);}
+.pct th{padding:9px 14px;font-size:0.7rem;letter-spacing:.08em;text-transform:uppercase;font-family:'Fira Code',monospace;background:#e2e8f0;border-bottom:2px solid var(--border2);}
 .pct td{padding:9px 14px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.55;}
 .pct td:nth-child(1){color:var(--accent3);font-family:'Fira Code',monospace;font-size:0.78rem;}
 /* assumption grid */
 .assumption-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0;}
-.assumption-card{background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:16px 18px;}
+.assumption-card{background:#f8fafc;border:1px solid var(--border);border-radius:4px;padding:16px 18px;}
 .a-num{font-family:'Fira Code',monospace;font-size:0.66rem;color:var(--accent5);letter-spacing:.1em;margin-bottom:7px;display:block;}
-.a-title{font-weight:600;font-size:0.9rem;color:#eef2ff;margin-bottom:5px;}
+.a-title{font-weight:600;font-size:0.9rem;color:#0f172a;margin-bottom:5px;}
 .a-body{font-size:0.82rem;color:var(--text-muted);margin:0;line-height:1.6;}
 /* curriculum */
-.curr-stage{background:var(--surface2);border:1px solid var(--border);border-radius:6px;margin:14px 0;overflow:hidden;}
+.curr-stage{background:#f8fafc;border:1px solid var(--border);border-radius:6px;margin:14px 0;overflow:hidden;}
 .curr-header{display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:1px solid var(--border);}
 .curr-badge{font-family:'Fira Code',monospace;font-size:0.72rem;font-weight:600;padding:3px 12px;border-radius:2px;}
-.s1 .curr-badge{background:rgba(79,156,249,.15);color:var(--accent);}
-.s2 .curr-badge{background:rgba(167,139,250,.15);color:var(--accent5);}
-.s3 .curr-badge{background:rgba(56,196,160,.15);color:var(--accent2);}
-.curr-body{padding:16px 20px;font-size:0.88rem;color:var(--text-muted);}
+.s1 .curr-badge{background:#dbeafe;color:#1d4ed8;}
+.s2 .curr-badge{background:#ede9fe;color:#6d28d9;}
+.s3 .curr-badge{background:#ccfbf1;color:#0f766e;}
+.curr-body{padding:16px 20px;font-size:0.88rem;color:#334155;}
 .curr-body strong{color:var(--text);}
 /* flow */
 .flow{display:flex;flex-direction:column;gap:0;margin:16px 0;}
 .flow-step{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px dashed var(--border);}
 .flow-step:last-child{border-bottom:none;}
 .flow-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#0f1117;display:flex;align-items:center;justify-content:center;font-family:'Fira Code',monospace;font-weight:700;font-size:0.9rem;margin-top:3px;}
-.flow-text strong{display:block;font-size:0.92rem;margin-bottom:3px;color:#eef2ff;}
+.flow-text strong{display:block;font-size:0.92rem;margin-bottom:3px;color:#0f172a;}
 .flow-text p{margin-bottom:0;font-size:0.85rem;color:var(--text-muted);text-indent:0;}
 /* pipe */
 .pipeline{display:flex;align-items:stretch;gap:0;margin:24px 0;overflow-x:auto;}
-.pipe-stage{flex:1;min-width:110px;background:var(--surface2);border:1px solid var(--border);padding:18px 14px;text-align:center;position:relative;}
+.pipe-stage{flex:1;min-width:110px;background:#f8fafc;border:1px solid var(--border);padding:18px 14px;text-align:center;position:relative;}
 .pipe-stage:not(:last-child)::after{content:'→';position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:1.1rem;z-index:1;font-family:'Fira Code',monospace;}
 .pipe-stage .ps-icon{font-size:1.4rem;display:block;margin-bottom:7px;}
 .pipe-stage .ps-name{font-family:'Fira Code',monospace;font-size:0.68rem;color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px;}
 .pipe-stage .ps-desc{font-size:0.72rem;color:var(--text-muted);line-height:1.4;}
-footer{background:var(--surface);border-top:1px solid var(--border);padding:36px 64px;color:var(--text-dim);font-size:0.78rem;font-family:'Fira Code',monospace;line-height:1.8;}
+footer{background:#f8fafc;border-top:1px solid var(--border);padding:36px 64px;color:#94a3b8;font-size:0.78rem;font-family:'Fira Code',monospace;line-height:1.8;}
 .fade-in{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease;}
 .fade-in.visible{opacity:1;transform:none;}
 @media(max-width:900px){#sidenav{display:none;}main{margin-left:0;}.section{padding:48px 24px;}.hero{padding:48px 24px;}}
 
 /* ── ROW-EMBED VIS ── */
 .row-embed-vis{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin:16px 0;}
-.re-cell{background:var(--surface3);border:1px solid var(--border);border-radius:4px;padding:10px 12px;text-align:center;font-family:'Fira Code',monospace;font-size:0.74rem;}
+.re-cell{background:#e2e8f0;border:1px solid var(--border);border-radius:4px;padding:10px 12px;text-align:center;font-family:'Fira Code',monospace;font-size:0.74rem;}
 .re-arrow{color:var(--accent3);font-size:1.4rem;}
 .re-result{background:rgba(79,156,249,.1);border:2px solid var(--accent);border-radius:4px;padding:12px 16px;text-align:center;font-family:'Fira Code',monospace;font-size:0.78rem;color:var(--accent);}
 .cls-tokens{display:flex;gap:6px;justify-content:center;margin:8px 0;}
@@ -231,7 +231,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:36px
       </tbody>
     </table>
   </div>
-  <p style="font-size:0.8rem;color:var(--text-dim);text-indent:0;">C_005 is the test row. The model must predict it using only C_001–C_004 as context.</p>
+  <p style="font-size:0.8rem;color:#94a3b8;text-indent:0;">C_005 is the test row. The model must predict it using only C_001–C_004 as context.</p>
 </section>
 
 <!-- ══════════════════════════════════════════════════ -->
@@ -291,8 +291,8 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:36px
         </div>
       </div>
     </div>
-    <div style="margin-top:16px; padding:14px 18px; background:var(--surface3); border-radius:4px; font-size:0.85rem; color:var(--text-muted);">
-      <strong style="color:#eef2ff;">The output</strong> = a weighted average of all Values, where the weights come from how well each Key matched the Query. You do not just pick the single best CV — you form a judgment that is a blend, heavily influenced by the best matches.
+    <div style="margin-top:16px; padding:14px 18px; background:#e2e8f0; border-radius:4px; font-size:0.85rem; color:var(--text-muted);">
+      <strong style="color:#0f172a;">The output</strong> = a weighted average of all Values, where the weights come from how well each Key matched the Query. You do not just pick the single best CV — you form a judgment that is a blend, heavily influenced by the best matches.
     </div>
   </div>
 
@@ -341,7 +341,7 @@ Step 3 — Weighted blend of Values:
         </div>
       </div>
       <div>
-        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:var(--text-dim);margin-bottom:8px;">Q·K SIMILARITY SCORES (illustrative)</div>
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#94a3b8;margin-bottom:8px;">Q·K SIMILARITY SCORES (illustrative)</div>
         <div style="display:flex;flex-direction:column;gap:6px;">
           <div style="display:flex;align-items:center;gap:8px;">
             <span style="font-family:'Fira Code',monospace;font-size:0.74rem;min-width:48px;color:var(--text-muted);">C_001</span>
@@ -372,14 +372,14 @@ Step 3 — Weighted blend of Values:
         <thead><tr><th>Training Customer</th><th>Profile</th><th>Q·K Score</th><th>Attention Weight α (softmax)</th><th>Label (Value)</th></tr></thead>
         <tbody>
           <tr><td>C_001</td><td>High bal, 14d late, low pay</td><td style="color:var(--accent4);">3.4</td><td style="color:var(--accent4);font-weight:600;">0.41</td><td class="label-d">Default</td></tr>
-          <tr><td>C_002</td><td>Low bal, 0d late, high pay</td><td style="color:var(--text-dim);">0.5</td><td style="color:var(--text-dim);">0.03</td><td class="label-ok">No Default</td></tr>
+          <tr><td>C_002</td><td>Low bal, 0d late, high pay</td><td style="color:#94a3b8;">0.5</td><td style="color:#94a3b8;">0.03</td><td class="label-ok">No Default</td></tr>
           <tr class="hl"><td>C_003</td><td>High bal, 22d late, very low pay</td><td style="color:var(--accent4);">4.1</td><td style="color:var(--accent4);font-weight:600;">0.49</td><td class="label-d">Default</td></tr>
-          <tr><td>C_004</td><td>Moderate bal, 8d late</td><td style="color:var(--text-dim);">1.1</td><td style="color:var(--text-dim);">0.07</td><td class="label-ok">No Default</td></tr>
+          <tr><td>C_004</td><td>Moderate bal, 8d late</td><td style="color:#94a3b8;">1.1</td><td style="color:#94a3b8;">0.07</td><td class="label-ok">No Default</td></tr>
         </tbody>
       </table>
     </div>
-    <div style="margin-top:12px;padding:12px 16px;background:var(--surface3);border-radius:4px;font-size:0.85rem;color:var(--text-muted);">
-      <strong style="color:#eef2ff;">Final output for C_005:</strong><br>
+    <div style="margin-top:12px;padding:12px 16px;background:#e2e8f0;border-radius:4px;font-size:0.85rem;color:var(--text-muted);">
+      <strong style="color:#0f172a;">Final output for C_005:</strong><br>
       output = 0.41 × V(Default) + 0.03 × V(NoDefault) + 0.49 × V(Default) + 0.07 × V(NoDefault)<br>
       = 90% of the output comes from Default-labelled customers → P(Default | C_005) ≈ 0.90
     </div>
@@ -416,26 +416,26 @@ Step 3 — Weighted blend of Values:
     <div class="dag" style="align-items:flex-start;gap:0;">
       <div class="dag-col">
         <div class="dag-label">Layer 0<br>Root nodes<br>(no parents)</div>
-        <div class="node node-root">x_r1<br><span style="font-size:0.64rem;color:var(--text-dim);">Latent income<br>drawn from noise</span></div>
+        <div class="node node-root">x_r1<br><span style="font-size:0.64rem;color:#94a3b8;">Latent income<br>drawn from noise</span></div>
         <div style="margin-top:10px;"></div>
-        <div class="node node-root">x_r2<br><span style="font-size:0.64rem;color:var(--text-dim);">Latent employ-<br>ment status</span></div>
+        <div class="node node-root">x_r2<br><span style="font-size:0.64rem;color:#94a3b8;">Latent employ-<br>ment status</span></div>
       </div>
       <div class="dag-arrow" style="padding:0 10px;margin-top:30px;">→</div>
       <div class="dag-col">
         <div class="dag-label">Layer 1<br>Child nodes</div>
-        <div class="node node-child">x_c1<br><span style="font-size:0.64rem;color:var(--text-dim);">Spending<br>f(x_r1, x_r2) + ε</span></div>
+        <div class="node node-child">x_c1<br><span style="font-size:0.64rem;color:#94a3b8;">Spending<br>f(x_r1, x_r2) + ε</span></div>
       </div>
       <div class="dag-arrow" style="padding:0 10px;margin-top:30px;">→</div>
       <div class="dag-col">
         <div class="dag-label">Layer 2<br>Child nodes</div>
-        <div class="node node-child">x_c2<br><span style="font-size:0.64rem;color:var(--text-dim);">Balance Ratio<br>f(x_c1, x_r1) + ε</span></div>
+        <div class="node node-child">x_c2<br><span style="font-size:0.64rem;color:#94a3b8;">Balance Ratio<br>f(x_c1, x_r1) + ε</span></div>
         <div style="margin-top:10px;"></div>
-        <div class="node node-child">x_c3<br><span style="font-size:0.64rem;color:var(--text-dim);">Days Delinquent<br>f(x_c1, x_r2) + ε</span></div>
+        <div class="node node-child">x_c3<br><span style="font-size:0.64rem;color:#94a3b8;">Days Delinquent<br>f(x_c1, x_r2) + ε</span></div>
       </div>
       <div class="dag-arrow" style="padding:0 10px;margin-top:30px;">→</div>
       <div class="dag-col">
         <div class="dag-label">Layer 3<br>Target</div>
-        <div class="node node-target">y<br><span style="font-size:0.64rem;color:var(--text-dim);">Default?<br>g(x_c2, x_c3)</span></div>
+        <div class="node node-target">y<br><span style="font-size:0.64rem;color:#94a3b8;">Default?<br>g(x_c2, x_c3)</span></div>
       </div>
     </div>
     <div class="illus-caption">Arrows represent causation. Root nodes (x_r1, x_r2) are pure random starting points. Child nodes are computed from their parents using a random transformation function f(·). One leaf becomes the target y. The final dataset contains all non-target nodes as features.</div>
@@ -520,7 +520,7 @@ WHAT ARE V AND E?  (they do NOT appear in the SCM)
           activation = one of 19 random functions:<br>
           &nbsp;&nbsp;ReLU, Tanh, Sine, Sigmoid, Square root,<br>
           &nbsp;&nbsp;Absolute value, Gaussian Process, etc.<br><br>
-          <strong style="color:#eef2ff;">Amex analogy:</strong> "Balance = f(Income, Spending)" might look like a smooth S-curve — spending beyond a threshold pushes balance sharply higher.
+          <strong style="color:#0f172a;">Amex analogy:</strong> "Balance = f(Income, Spending)" might look like a smooth S-curve — spending beyond a threshold pushes balance sharply higher.
         </div>
       </div>
       <div style="background:rgba(56,196,160,.07);border:1px solid rgba(56,196,160,.25);border-radius:6px;padding:18px;">
@@ -532,7 +532,7 @@ WHAT ARE V AND E?  (they do NOT appear in the SCM)
           the child node values.<br><br>
           Result: f looks like a step-function with thresholds —<br>
           exactly how financial risk scores often work in practice.<br><br>
-          <strong style="color:#eef2ff;">Amex analogy:</strong> "Risk score jumps sharply when both Balance &gt; 0.8 AND Days &gt; 15."
+          <strong style="color:#0f172a;">Amex analogy:</strong> "Risk score jumps sharply when both Balance &gt; 0.8 AND Days &gt; 15."
         </div>
       </div>
     </div>
@@ -584,8 +584,8 @@ Model parameters sampled per node:
       <table class="data-table">
         <thead><tr><th>SCM Node</th><th>Type</th><th>Parents</th><th>Transformation f(·)</th><th>Amex Analogy</th><th>In Final Dataset?</th></tr></thead>
         <tbody>
-          <tr><td>x_r1</td><td style="color:var(--accent);">Root</td><td>None</td><td>N(0,1) noise</td><td>Latent creditworthiness score (unobservable)</td><td style="color:var(--text-dim);">No — hidden seed</td></tr>
-          <tr><td>x_r2</td><td style="color:var(--accent);">Root</td><td>None</td><td>N(0,1) noise</td><td>Latent employment stability (unobservable)</td><td style="color:var(--text-dim);">No — hidden seed</td></tr>
+          <tr><td>x_r1</td><td style="color:var(--accent);">Root</td><td>None</td><td>N(0,1) noise</td><td>Latent creditworthiness score (unobservable)</td><td style="color:#94a3b8;">No — hidden seed</td></tr>
+          <tr><td>x_r2</td><td style="color:var(--accent);">Root</td><td>None</td><td>N(0,1) noise</td><td>Latent employment stability (unobservable)</td><td style="color:#94a3b8;">No — hidden seed</td></tr>
           <tr><td>x_c1</td><td style="color:var(--accent2);">Child</td><td>x_r1, x_r2</td><td>Neural: Tanh(W·[x_r1,x_r2])</td><td><strong>Spend S₃</strong> — driven by income × employment</td><td style="color:var(--accent2);">✓ Feature column</td></tr>
           <tr><td>x_c2</td><td style="color:var(--accent2);">Child</td><td>x_c1, x_r1</td><td>Tree: XGB(x_c1, x_r1) + ε</td><td><strong>Balance Ratio B₁</strong> — spending × credit limit</td><td style="color:var(--accent2);">✓ Feature column</td></tr>
           <tr><td>x_c3</td><td style="color:var(--accent2);">Child</td><td>x_c1, x_r2</td><td>Neural: ReLU(W·[x_c1,x_r2])</td><td><strong>Payment Ratio P₂</strong></td><td style="color:var(--accent2);">✓ Feature column</td></tr>
@@ -667,17 +667,17 @@ Model parameters sampled per node:
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;">
       <div style="display:flex;align-items:center;gap:10px;">
-        <div style="background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.35);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.74rem;color:var(--accent5);min-width:170px;text-align:center;">128 Inducing Vectors V_I<br><span style="font-size:0.62rem;color:var(--text-dim);">"I am question-asker #3.<br>What is this column's skew?"</span></div>
+        <div style="background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.35);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.74rem;color:var(--accent5);min-width:170px;text-align:center;">128 Inducing Vectors V_I<br><span style="font-size:0.62rem;color:#94a3b8;">"I am question-asker #3.<br>What is this column's skew?"</span></div>
         <div style="color:var(--accent3);font-size:1.1rem;white-space:nowrap;">—MAB₁→</div>
-        <div style="background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.3);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.74rem;color:var(--accent3);text-align:center;">M ∈ R^{128×128}<br><span style="font-size:0.62rem;color:var(--text-dim);">"Column summary: right-skewed,<br>most values near 0, outliers at 20+"</span></div>
+        <div style="background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.3);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.74rem;color:var(--accent3);text-align:center;">M ∈ R^{128×128}<br><span style="font-size:0.62rem;color:#94a3b8;">"Column summary: right-skewed,<br>most values near 0, outliers at 20+"</span></div>
       </div>
-      <div style="font-family:'Fira Code',monospace;font-size:0.68rem;color:var(--text-dim);padding-left:8px;">↑ MAB₁: 128 inducing vectors (queries) attend to all n training-row embeddings (keys + values) → produces 128-dimensional column summary M. Only training rows are used here — no test data leakage.</div>
+      <div style="font-family:'Fira Code',monospace;font-size:0.68rem;color:#94a3b8;padding-left:8px;">↑ MAB₁: 128 inducing vectors (queries) attend to all n training-row embeddings (keys + values) → produces 128-dimensional column summary M. Only training rows are used here — no test data leakage.</div>
       <div style="display:flex;align-items:center;gap:10px;">
-        <div style="background:rgba(79,156,249,.1);border:1px solid rgba(79,156,249,.25);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.74rem;color:var(--accent);min-width:170px;text-align:center;">Each cell U[i]<br><span style="font-size:0.62rem;color:var(--text-dim);">all n customers (train + test)<br>"Tell me where I rank"</span></div>
+        <div style="background:rgba(79,156,249,.1);border:1px solid rgba(79,156,249,.25);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.74rem;color:var(--accent);min-width:170px;text-align:center;">Each cell U[i]<br><span style="font-size:0.62rem;color:#94a3b8;">all n customers (train + test)<br>"Tell me where I rank"</span></div>
         <div style="color:var(--accent3);font-size:1.1rem;white-space:nowrap;">—MAB₂→</div>
-        <div style="background:rgba(56,196,160,.1);border:1px solid rgba(56,196,160,.3);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.74rem;color:var(--accent2);text-align:center;">V[i] ∈ R^{128}<br><span style="font-size:0.62rem;color:var(--text-dim);">"I am in the 80th percentile —<br>high but not the maximum"</span></div>
+        <div style="background:rgba(56,196,160,.1);border:1px solid rgba(56,196,160,.3);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.74rem;color:var(--accent2);text-align:center;">V[i] ∈ R^{128}<br><span style="font-size:0.62rem;color:#94a3b8;">"I am in the 80th percentile —<br>high but not the maximum"</span></div>
       </div>
-      <div style="font-family:'Fira Code',monospace;font-size:0.68rem;color:var(--text-dim);padding-left:8px;">↑ MAB₂: Each customer's cell embedding (query) attends to the summary M (keys + values) → gets back a contextualised embedding V[i]. Test rows can participate here because they are only reading from M, not contributing to it.</div>
+      <div style="font-family:'Fira Code',monospace;font-size:0.68rem;color:#94a3b8;padding-left:8px;">↑ MAB₂: Each customer's cell embedding (query) attends to the summary M (keys + values) → gets back a contextualised embedding V[i]. Test rows can participate here because they are only reading from M, not contributing to it.</div>
     </div>
   </div>
 
@@ -812,10 +812,10 @@ OUTPUT
         <div class="cell"><span class="cell-val" style="color:var(--accent3);">C_005: 19</span><div class="cell-bar" style="width:86%;background:var(--accent3);"></div></div>
       </div>
       <div style="align-self:center;color:var(--accent3);font-size:1.6rem;padding:0 10px;">→</div>
-      <div style="background:var(--surface3);border:1px solid var(--border);border-radius:4px;padding:14px;min-width:60px;text-align:center;align-self:center;">
+      <div style="background:#e2e8f0;border:1px solid var(--border);border-radius:4px;padding:14px;min-width:60px;text-align:center;align-self:center;">
         <div style="font-family:'Fira Code',monospace;font-size:0.64rem;color:var(--accent5);">ISAB</div>
         <div style="font-size:1.2rem;">⚙️</div>
-        <div style="font-family:'Fira Code',monospace;font-size:0.62rem;color:var(--text-dim);">reads full<br>column<br>first</div>
+        <div style="font-family:'Fira Code',monospace;font-size:0.62rem;color:#94a3b8;">reads full<br>column<br>first</div>
       </div>
       <div style="align-self:center;color:var(--accent3);font-size:1.6rem;padding:0 10px;">→</div>
       <div class="col-box" style="min-width:200px;">
@@ -1011,20 +1011,25 @@ Output: H = [h_1, ..., h_n] ∈ R^{n × 512}
         </div>
       </div>
     </div>
-    <div style="margin-top:14px;padding:12px 16px;background:var(--surface3);border-radius:4px;font-size:0.83rem;color:var(--text-muted);">
-      <strong style="color:#eef2ff;">Why keep only CLS, not all feature vectors?</strong><br>
+    <div style="margin-top:14px;padding:12px 16px;background:#e2e8f0;border-radius:4px;font-size:0.83rem;color:var(--text-muted);">
+      <strong style="color:#0f172a;">Why keep only CLS, not all feature vectors?</strong><br>
       The 5 feature token outputs (e_{i,1}...e_{i,5}) each describe one specific feature. They are column-specific. The CLS tokens are column-agnostic — they have no assigned column, so they are free to encode <em>cross-feature interactions</em> holistically. The model learns during pre-training to pack the most prediction-relevant information into the CLS slots. Keeping all 9 output vectors (4 CLS + 5 features) would also give a much larger vector (9×128=1152 dims) for Stage 3 to process — making the n×n attention in Stage 3 more expensive. The 4 CLS design is a deliberate compression: distill 9 vectors into 4 summary slots.
     </div>
   </div>
 </section>
 
 <!-- ══ STAGE 3 ══ -->
+
+<!-- ══ STAGE 3 ══ -->
 <section class="section fade-in" id="stage3">
-  <div class="section-header"><div class="section-num">§ 06</div><h2>Stage 3: In-Context Prediction — Borrowing Label Signal (TF<sub>icl</sub>)</h2></div>
+  <div class="section-header"><div class="section-num">§ 06</div><h2>Stage 3: In-Context Prediction — How h_i Vectors Attend to Each Other (TF<sub>icl</sub>)</h2></div>
 
-  <p>We now have h_i — a 512-dim portrait per customer. Training customers know their label. C_005 does not. Stage 3 is a 12-layer transformer that lets C_005 attend to training customers and borrow their label signal. This is where the actual prediction happens.</p>
+  <p>We now have <code>H = [h_1, ..., h_n]</code> — one 512-dim portrait vector per customer. Training customers also carry their label (fused in via E_label). The test customer C_005 carries no label. Stage 3 runs a 12-layer transformer over all these h_i vectors simultaneously — letting every row attend to every other row. This is where prediction happens.</p>
 
-  <h3>Definition 6.1 — Label Injection: What Is E_label and "Learnable"?</h3>
+  <div class="callout callout-insight"><span class="callout-label">🧠 The Core Operation</span>
+    <p>Imagine seating all 5 customers around a table. Each one looks around at every other person and asks: "How similar is your profile to mine?" Training customers can answer with their label. C_005 listens to all answers, weights them by similarity, and forms its prediction. That is exactly what the self-attention inside TF_icl does — but in 512-dimensional space, with learned similarity measures, and across 12 progressively refined rounds.</p></div>
+
+  <h3>Step 1 — Label Injection: Stamping Training Rows with Their Outcome</h3>
 
   <div class="math-block">
     <span class="math-label">Definition 6.1 — Label Injection: Every Term Explained</span>
@@ -1045,74 +1050,332 @@ WHAT IS E_label?
   Think of it as: "the official description of what Default
   looks like in the 512-dim embedding space."
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 WHAT DOES "LEARNABLE" MEAN?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   The 2 × 512 = 1024 numbers in E_label are model PARAMETERS.
-  They are NOT hand-coded by researchers.
-  They start as random numbers and are updated during pre-training
-  via gradient descent — just like the weight matrices W_Q, W_K.
+  They start random and are updated during pre-training via
+  gradient descent — just like W_Q, W_K, W_V.
 
-  After 82 million synthetic tables, these 1024 numbers have
-  learned a useful meaning:
-  E_label[1,:] (the "Default" embedding) points in the direction
-  in 512-dim space that, when added to a customer's portrait h_i,
-  makes that customer "look like a defaulter" to the Stage 3
-  attention mechanism.
+  After 82M synthetic tables, E_label[1,:] points in the direction
+  in 512-dim space that, when added to a portrait h_i, makes that
+  customer "look like a defaulter" to Stage 3's attention.
 
-  This is analogous to word embeddings in NLP: "king" and "queen"
-  are not hand-coded — they are learned from data to encode
-  meaningful relationships. E_label[0] and E_label[1] are
-  "meaning vectors" for the concepts of No Default and Default.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-HOW IT WORKS IN PRACTICE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HOW IT WORKS:
   y_i = 1 (Default)  →  y_one_hot = [0, 1]
 
-  label_embed_i = E_label · y_one_hot
-                = 0 × E_label[0,:] + 1 × E_label[1,:]
-                = E_label[1,:]    (just pick the "Default" row)
+  label_embed_i = E_label · y_one_hot = E_label[1,:]
 
-  H_train[i] = h_i + label_embed_i
-             = (customer portrait) + (label meaning vector)
-
-  For the test customer C_005:
-  H_test  = h_{C005}   ← no label added
-             The absence of a label embedding is itself a signal:
-             "this row has no known outcome — predict it."
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-WHY ADD, NOT CONCATENATE?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Adding keeps the dimension at 512 — no extra computation in
-  Stage 3's attention. Concatenating would double the dimension
-  to 1024, making Stage 3's O(n²) attention 4× more expensive.
+  H_train[i] = h_i + label_embed_i   ← portrait + label signal
+  H_test      = h_{C005}              ← portrait only, no label
     </div>
   </div>
 
   <div class="illus">
-    <div class="illus-title">// Illustration: What Gets Added to Each Training Row vs. Test Row</div>
+    <div class="illus-title">// What Gets Added to Each Row Before Stage 3 Runs</div>
     <div style="display:flex;flex-direction:column;gap:10px;">
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-        <div style="background:rgba(224,92,122,.1);border:1px solid rgba(224,92,122,.3);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent4);">C_001 portrait h_i</span><br><span style="color:var(--text-dim);">512 numbers encoding<br>"high balance, late payer"</span></div>
-        <span style="color:var(--accent3);font-size:1.2rem;">+</span>
-        <div style="background:rgba(224,92,122,.1);border:1px dashed rgba(224,92,122,.5);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent4);">E_label[1,:] — "Default"</span><br><span style="color:var(--text-dim);">512 learned numbers<br>meaning "this person defaulted"</span></div>
-        <span style="color:var(--accent3);font-size:1.2rem;">=</span>
-        <div style="background:rgba(224,92,122,.15);border:2px solid rgba(224,92,122,.5);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent4);">H_train[C_001]</span><br><span style="color:var(--text-dim);">512 numbers: "high-balance<br>late-paying defaulter"</span></div>
+        <div style="background:#fee2e2;border:1px solid #fca5a5;border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent4);">C_001 portrait h_i</span><br><span style="color:var(--text-muted);">512 numbers encoding<br>"high balance, late payer"</span></div>
+        <span style="color:var(--accent3);font-size:1.4rem;font-weight:bold;">+</span>
+        <div style="background:#fee2e2;border:1px dashed #f87171;border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent4);">E_label[1,:] — "Default"</span><br><span style="color:var(--text-muted);">512 learned numbers<br>meaning "this person defaulted"</span></div>
+        <span style="color:var(--accent3);font-size:1.4rem;font-weight:bold;">=</span>
+        <div style="background:#fee2e2;border:2px solid #f87171;border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent4);">H_train[C_001]</span><br><span style="color:var(--text-muted);">512 numbers:<br>"high-balance defaulter"</span></div>
       </div>
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-        <div style="background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.3);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent3);">C_005 portrait h_i</span><br><span style="color:var(--text-dim);">512 numbers encoding<br>"very high balance, 19d late"</span></div>
-        <span style="color:var(--text-dim);font-size:1.2rem;">+</span>
-        <div style="background:var(--surface3);border:1px dashed var(--border2);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;color:var(--text-dim);">nothing added<br>(label unknown)<br>&nbsp;</div>
-        <span style="color:var(--accent3);font-size:1.2rem;">=</span>
-        <div style="background:rgba(245,166,35,.1);border:2px solid rgba(245,166,35,.4);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent3);">H_test[C_005]</span><br><span style="color:var(--text-dim);">512 numbers: "high-balance<br>late-payer — PREDICT ME"</span></div>
+        <div style="background:#fef9c3;border:1px solid #fde047;border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent3);">C_005 portrait h_i</span><br><span style="color:var(--text-muted);">512 numbers encoding<br>"very high balance, 19d late"</span></div>
+        <span style="color:#94a3b8;font-size:1.4rem;">+</span>
+        <div style="background:var(--surface2);border:1px dashed var(--border2);border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;color:#94a3b8;">nothing added<br>(label unknown —<br>needs prediction)</div>
+        <span style="color:var(--accent3);font-size:1.4rem;font-weight:bold;">=</span>
+        <div style="background:#fef9c3;border:2px solid #fde047;border-radius:4px;padding:10px 14px;font-family:'Fira Code',monospace;font-size:0.76rem;min-width:160px;"><span style="color:var(--accent3);">H_test[C_005]</span><br><span style="color:var(--text-muted);">512 numbers:<br>"predict me"</span></div>
       </div>
     </div>
-    <div class="illus-caption">The label embedding acts as a flag: "this training customer defaulted — weight their experience accordingly when C_005 asks who it resembles." The absence of this flag in C_005's vector signals to Stage 3 that this row needs a prediction, not a label lookup.</div>
+    <div class="illus-caption">The label embedding acts as a stamp: "this training customer defaulted." C_005 has no stamp — its absence is itself a signal to Stage 3: "this row needs a prediction, not a label lookup."</div>
+  </div>
+
+  <h3>Step 2 — Attention Between All h_i Vectors: The Full Mechanics</h3>
+  <p>All n row vectors (H_train and H_test combined) are now fed into TF_icl — a 12-layer transformer. At each layer, every row vector computes its own Q, K, V and attends to every other row. Here is the complete operation — with every symbol explained.</p>
+
+  <div class="math-block">
+    <span class="math-label">Definition 6.2 — Full Stage 3 Self-Attention Across All h_i Vectors</span>
+    <div class="formula">
+Input: H_input = [H_train[1], ..., H_train[n_tr], H_test[1], ..., H_test[n_te]]
+                 ∈ R^{n × 512}       n = n_tr + n_te total rows
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FOR EVERY ROW i (train and test alike):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Q_i = W_Q · H_input[i]   ∈ R^{512}
+  K_i = W_K · H_input[i]   ∈ R^{512}
+  V_i = W_V · H_input[i]   ∈ R^{512}
+
+  W_Q, W_K, W_V ∈ R^{512×512}  — learned weight matrices.
+  All three project the SAME 512-dim input into different roles:
+    Q_i  = "what am I looking for in other rows?"
+    K_i  = "what do I advertise about myself?"
+    V_i  = "what information do I carry to pass forward?"
+           (V_i contains both feature AND label signal,
+            since H_input[i] already fused both)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SIMILARITY SCORE (row i attending to row j):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  score(i, j) = Q_i · K_j / √512
+
+  Q_i · K_j  = dot product = a single number measuring
+               how aligned i's "question" is with j's "answer"
+               High value → i and j are similar profiles
+               Low value  → i and j are dissimilar
+
+  √512       = scaling factor to prevent scores from growing
+               so large that softmax becomes a hard one-hot
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MASKING — BLOCKING ILLEGAL ATTENTION PATHS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Mask matrix M ∈ R^{n × n}:
+    M[i, j] = 0    if j is a TRAINING row  → attend freely
+    M[i, j] = −∞  if j is a TEST row      → completely blocked
+
+  Why −∞? Because softmax(−∞) = exp(−∞)/Σ = 0/Σ = 0.
+  Any row that attends to a test-row position gets weight exactly
+  zero from that position. It is as if that position does not exist.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ATTENTION WEIGHTS (for row C_005):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  α_j = softmax( score(C005, j) + M[C005, j] )
+       = exp(score + M[j]) / Σ_k exp(score + M[k])
+
+  Result for our Amex example:
+    α_{C001} = 0.41   (similar: high balance, late payments)
+    α_{C002} = 0.03   (dissimilar: low balance, on-time)
+    α_{C003} = 0.49   (most similar: high balance, 22d late)
+    α_{C004} = 0.07   (somewhat dissimilar: moderate profile)
+    Σ = 1.00 ✓
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OUTPUT VECTOR FOR C_005:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  o_{C005} = Σ_j  α_j × V_j   ∈ R^{512}
+
+           = 0.41 × V_{C001}   ← carries Default signal (high weight)
+           + 0.03 × V_{C002}   ← carries NoDefault signal (low weight)
+           + 0.49 × V_{C003}   ← carries Default signal (highest weight)
+           + 0.07 × V_{C004}   ← carries NoDefault signal (low weight)
+
+  → 90% of the blended output comes from Default-labelled rows
+  → o_{C005} is dominated by the "Default" signal
+    </div>
+    <div class="math-note">This runs 12 times (12 attention layers). Each layer refines the h_i vectors — early layers establish rough similarity, later layers integrate subtler cross-row interactions. By layer 12, each test row's output vector is a rich blend of information from the most relevant training rows.</div>
+  </div>
+
+  <h3>Deep Dive: How Masking Works — And Why It Is Essential</h3>
+  <p>The masking step is the single most important safety mechanism in Stage 3. Without it, the model could "cheat" by copying label information across test rows. Here is exactly how it works and what would go wrong without it.</p>
+
+  <div class="illus">
+    <div class="illus-title">// The n×n Attention Matrix — What Gets Masked and Why</div>
+    <div style="overflow-x:auto;">
+      <table style="border-collapse:collapse;font-family:'Fira Code',monospace;font-size:0.8rem;margin:0 auto;">
+        <thead>
+          <tr>
+            <td style="padding:8px 12px;background:#f1f5f9;border:1px solid var(--border);font-size:0.72rem;color:#94a3b8;">Row i attends to →</td>
+            <th style="padding:8px 14px;background:#dbeafe;border:1px solid var(--border);color:#1d4ed8;text-align:center;">C_001<br><span style="font-weight:normal;font-size:0.68rem;">Training</span></th>
+            <th style="padding:8px 14px;background:#dbeafe;border:1px solid var(--border);color:#1d4ed8;text-align:center;">C_002<br><span style="font-weight:normal;font-size:0.68rem;">Training</span></th>
+            <th style="padding:8px 14px;background:#dbeafe;border:1px solid var(--border);color:#1d4ed8;text-align:center;">C_003<br><span style="font-weight:normal;font-size:0.68rem;">Training</span></th>
+            <th style="padding:8px 14px;background:#dbeafe;border:1px solid var(--border);color:#1d4ed8;text-align:center;">C_004<br><span style="font-weight:normal;font-size:0.68rem;">Training</span></th>
+            <th style="padding:8px 14px;background:#fef9c3;border:1px solid var(--border);color:#b45309;text-align:center;">C_005<br><span style="font-weight:normal;font-size:0.68rem;">Test</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:8px 12px;background:#dbeafe;border:1px solid var(--border);color:#1d4ed8;font-weight:bold;">C_001 (Train)</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#fee2e2;color:#be123c;text-align:center;font-weight:bold;">✗ −∞</td>
+          </tr>
+          <tr>
+            <td style="padding:8px 12px;background:#dbeafe;border:1px solid var(--border);color:#1d4ed8;font-weight:bold;">C_002 (Train)</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#fee2e2;color:#be123c;text-align:center;font-weight:bold;">✗ −∞</td>
+          </tr>
+          <tr>
+            <td style="padding:8px 12px;background:#dbeafe;border:1px solid var(--border);color:#1d4ed8;font-weight:bold;">C_003 (Train)</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#fee2e2;color:#be123c;text-align:center;font-weight:bold;">✗ −∞</td>
+          </tr>
+          <tr style="background:#fffbeb;">
+            <td style="padding:8px 12px;background:#fef9c3;border:1px solid var(--border);color:#b45309;font-weight:bold;">C_005 (Test)</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#f0fdf4;color:#15803d;text-align:center;">✓ 0</td>
+            <td style="padding:8px 14px;border:1px solid var(--border);background:#fee2e2;color:#be123c;text-align:center;font-weight:bold;">✗ −∞</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;">
+      <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:4px;padding:14px;">
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#15803d;font-weight:bold;margin-bottom:8px;">✓ M[i,j] = 0 — ALLOWED (adds nothing to score)</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">All rows can freely attend to all training rows. Training rows carry label signal (via E_label). This is exactly where the prediction information comes from.</div>
+      </div>
+      <div style="background:#fee2e2;border:1px solid #fca5a5;border-radius:4px;padding:14px;">
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#be123c;font-weight:bold;margin-bottom:8px;">✗ M[i,j] = −∞ — BLOCKED (softmax → weight 0)</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">No row can attend to any test row. Test rows carry no label — attending to them would spread noise, not signal. The −∞ makes softmax output exactly 0 for that position.</div>
+      </div>
+    </div>
+    <div class="illus-caption">Every row — training and test alike — is blocked from attending to test rows. Even C_001 cannot attend to C_005. This prevents any cross-contamination between test rows and ensures all label signal flows only from training → test, never in the other direction. Notice every row also blocks attending to itself via the diagonal (standard in transformers to prevent trivial self-copying).</div>
+  </div>
+
+  <div class="callout callout-warning"><span class="callout-label">⚠️ Why Masking Is Critical — The Cheating Scenario</span>
+    <p>Suppose we had two test rows C_005 and C_006. Without masking, C_005 could attend to C_006 and vice versa. But neither carries a label. They would just exchange their own portrait information — noise circulating between two unknown rows. Worse, if the model learned to use this cross-test attention during training, it would be exploiting patterns across test rows that would not be present at real inference time (when test rows are scored independently). Masking to −∞ eliminates this entirely: test rows are read-only observers of training rows.</p></div>
+
+  <h3>How Masking Works Mathematically — Step by Step</h3>
+  <div class="math-block">
+    <span class="math-label">Definition 6.3 — Masked Softmax: The −∞ Trick</span>
+    <div class="formula">
+Raw scores for C_005 attending to all 5 rows (before mask):
+  score(C005, C001) =  3.4   (high — similar profiles)
+  score(C005, C002) =  0.5   (low  — dissimilar)
+  score(C005, C003) =  4.1   (highest — most similar)
+  score(C005, C004) =  1.1   (moderate)
+  score(C005, C005) =  5.2   (would be highest — same vector!)
+
+Apply mask M[C005, :]:
+  score + M[C005, C001] =  3.4 + 0   =  3.4   ✓ kept
+  score + M[C005, C002] =  0.5 + 0   =  0.5   ✓ kept
+  score + M[C005, C003] =  4.1 + 0   =  4.1   ✓ kept
+  score + M[C005, C004] =  1.1 + 0   =  1.1   ✓ kept
+  score + M[C005, C005] =  5.2 + (−∞) = −∞   ✗ zeroed out
+
+Softmax over masked scores:
+  denominator = exp(3.4) + exp(0.5) + exp(4.1) + exp(1.1) + exp(−∞)
+              = 29.96 + 1.65 + 60.34 + 3.00 + 0
+              = 94.95
+
+  α_{C001} = exp(3.4) / 94.95  = 29.96 / 94.95 ≈ 0.316  → rescaled to 0.41*
+  α_{C002} = exp(0.5) / 94.95  =  1.65 / 94.95 ≈ 0.017  → rescaled to 0.03*
+  α_{C003} = exp(4.1) / 94.95  = 60.34 / 94.95 ≈ 0.635  → rescaled to 0.49*
+  α_{C004} = exp(1.1) / 94.95  =  3.00 / 94.95 ≈ 0.032  → rescaled to 0.07*
+  α_{C005} = exp(−∞) / 94.95  =  0    / 94.95  = 0.000  ← completely zeroed
+  (* slight renormalisation for 8-head multi-head attention)
+
+Without the mask, C_005 would assign the highest weight to itself
+(score=5.2), effectively copying its own portrait — which carries
+no label information. The mask prevents this trivially wrong behaviour.
+    </div>
+  </div>
+
+  <h3>Step 3 — 12 Layers of Refinement: What Changes Each Round?</h3>
+  <p>The attention operation above runs 12 times. Each layer takes the output of the previous layer as its new input. This is not just repetition — each layer refines the representations progressively:</p>
+
+  <div class="step-cards">
+    <div class="step-card">
+      <div class="step-badge"><div class="s-icon">🔎</div><div class="s-num">1–3</div></div>
+      <div class="step-body">
+        <div class="step-title">Early Layers — Rough Similarity</div>
+        <p>The h_i vectors are still close to their Stage 2 outputs. Attention weights reflect broad similarities — high-balance customers attract each other, low-risk customers attract each other. The similarity is approximate and feature-driven.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-badge"><div class="s-icon">🧩</div><div class="s-num">4–8</div></div>
+      <div class="step-body">
+        <div class="step-title">Middle Layers — Label-Aware Grouping</div>
+        <p>After a few rounds, the h_i vectors begin incorporating label signal (via blended V vectors from early layers). Training rows with the same label start attracting each other more strongly. C_005's representation absorbs label information from its neighbours.</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="step-badge"><div class="s-icon">🎯</div><div class="s-num">9–12</div></div>
+      <div class="step-body">
+        <div class="step-title">Late Layers — Prediction Crystallisation</div>
+        <p>C_005's output vector <code>o_{C005}</code> has accumulated weighted evidence from all training rows across multiple rounds. It is now a rich blend of label signal weighted by similarity. The representation is stable and ready for the final MLP head.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Step 4 — Final Prediction Head</h3>
+  <div class="math-block">
+    <span class="math-label">Definition 6.4 — MLP Classification Head: From Blended Vector to Probability</span>
+    <div class="formula">
+After 12 layers of TF_icl:
+  o_{C005} ∈ R^{512}
+  (a 512-dim vector encoding blended evidence from training rows,
+   weighted 90% from Default-labelled customers for C_005)
+
+Two-layer MLP:
+  hidden  = ReLU( W₁ · o_{C005} + b₁ )   ∈ R^{256}
+  logits  = W₂ · hidden + b₂               ∈ R^C
+
+  W₁ ∈ R^{256 × 512},  b₁ ∈ R^{256}
+  W₂ ∈ R^{C × 256},    b₂ ∈ R^C
+
+For binary Amex (C=2):
+  logits = [−2.20, +2.20]
+           ↑ No Default  ↑ Default
+
+  p(Default    | C_005) = exp(2.20) / (exp(−2.20) + exp(2.20))
+                        = 9.03 / (0.11 + 9.03) = 0.988
+  p(No Default | C_005) = 1 − 0.988 = 0.012
+
+  Prediction: Default   (p > 0.50 threshold)
+
+Why does this work?
+  During pre-training, the MLP head saw millions of synthetic
+  scenarios where o_{test} was dominated by Default-labelled
+  training rows AND the true label was Default. It learned:
+  "when the blended vector points in the Default direction,
+   output a high logit for the Default class."
+  This mapping is baked into W₁, W₂, b₁, b₂.
+    </div>
+  </div>
+
+  <div class="illus">
+    <div class="illus-title">// End-to-End: From C_005's Features to Final Prediction</div>
+    <div style="display:flex;gap:0;overflow-x:auto;align-items:stretch;">
+      <div style="flex:1;min-width:100px;background:#dbeafe;border:1px solid #93c5fd;padding:14px 10px;text-align:center;">
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#1d4ed8;font-weight:bold;margin-bottom:6px;">INPUT</div>
+        <div style="font-size:0.78rem;color:var(--text-muted);">C_005 raw features<br>B₁=0.89<br>D₃₉=19<br>P₂=0.11</div>
+      </div>
+      <div style="padding:0 6px;align-self:center;color:var(--accent3);font-size:1.2rem;">→</div>
+      <div style="flex:1;min-width:100px;background:#e0f2f1;border:1px solid #5eead4;padding:14px 10px;text-align:center;">
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#0f766e;font-weight:bold;margin-bottom:6px;">STAGE 1</div>
+        <div style="font-size:0.78rem;color:var(--text-muted);">Column<br>embeddings<br>E ∈ R^{5×128}</div>
+      </div>
+      <div style="padding:0 6px;align-self:center;color:var(--accent3);font-size:1.2rem;">→</div>
+      <div style="flex:1;min-width:100px;background:#ede9fe;border:1px solid #c4b5fd;padding:14px 10px;text-align:center;">
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#6d28d9;font-weight:bold;margin-bottom:6px;">STAGE 2</div>
+        <div style="font-size:0.78rem;color:var(--text-muted);">Portrait<br>vector<br>h_i ∈ R^{512}</div>
+      </div>
+      <div style="padding:0 6px;align-self:center;color:var(--accent3);font-size:1.2rem;">→</div>
+      <div style="flex:1;min-width:110px;background:#fef9c3;border:1px solid #fde047;padding:14px 10px;text-align:center;">
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#b45309;font-weight:bold;margin-bottom:6px;">STAGE 3 ATTN</div>
+        <div style="font-size:0.78rem;color:var(--text-muted);">12 layers<br>attend to all<br>training h_i's<br>+ masking</div>
+      </div>
+      <div style="padding:0 6px;align-self:center;color:var(--accent3);font-size:1.2rem;">→</div>
+      <div style="flex:1;min-width:100px;background:#fee2e2;border:1px solid #fca5a5;padding:14px 10px;text-align:center;">
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#be123c;font-weight:bold;margin-bottom:6px;">MLP HEAD</div>
+        <div style="font-size:0.78rem;color:var(--text-muted);">o_{C005}<br>→ logits<br>→ softmax</div>
+      </div>
+      <div style="padding:0 6px;align-self:center;color:var(--accent3);font-size:1.2rem;">→</div>
+      <div style="flex:1;min-width:100px;background:#fee2e2;border:2px solid #f87171;padding:14px 10px;text-align:center;font-weight:bold;">
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#be123c;font-weight:bold;margin-bottom:6px;">OUTPUT</div>
+        <div style="font-size:0.9rem;color:#be123c;">P(Default)<br>= 0.988</div>
+      </div>
+    </div>
+    <div class="illus-caption">The full pipeline for one test row, from raw numbers to calibrated probability. Every arrow is differentiable — during pre-training, gradients flow all the way from the final prediction loss back through the MLP head, through all 12 attention layers, through Stage 2, and into Stage 1's ISAB weights.</div>
   </div>
 </section>
-
 <!-- ══ PREDICTION DEEP DIVE ══ -->
 <section class="section fade-in" id="prediction-deep">
   <div class="section-header"><div class="section-num">§ 07</div><h2>What Has the Model Learned? How Does Prediction Actually Work?</h2></div>
@@ -1158,8 +1421,8 @@ WHY ADD, NOT CONCATENATE?
     <div class="illus-title">// Illustration: KNN-Type — Two Clusters, C_005 Falls Near the Default Cluster</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;">
       <div>
-        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:var(--text-dim);margin-bottom:10px;">PORTRAIT SPACE (2D projection of 512-dim h vectors)</div>
-        <div style="background:var(--surface3);border:1px solid var(--border);border-radius:4px;padding:16px;position:relative;height:200px;overflow:hidden;">
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#94a3b8;margin-bottom:10px;">PORTRAIT SPACE (2D projection of 512-dim h vectors)</div>
+        <div style="background:#e2e8f0;border:1px solid var(--border);border-radius:4px;padding:16px;position:relative;height:200px;overflow:hidden;">
           <!-- Default cluster top-right -->
           <div style="position:absolute;top:14px;right:14px;font-family:'Fira Code',monospace;font-size:0.6rem;color:var(--accent4);">Default cluster</div>
           <div style="position:absolute;top:42px;right:52px;width:9px;height:9px;border-radius:50%;background:var(--accent4);"></div>
@@ -1180,10 +1443,10 @@ WHY ADD, NOT CONCATENATE?
           <div style="position:absolute;top:50%;left:10px;right:10px;border-top:1px dashed rgba(167,139,250,.5);"></div>
           <div style="position:absolute;top:50%;left:46%;font-family:'Fira Code',monospace;font-size:0.58rem;color:rgba(167,139,250,.7);">boundary</div>
         </div>
-        <div style="font-size:0.76rem;color:var(--text-dim);margin-top:6px;">C_005 (★) falls inside the Default cluster in portrait space. Its neighbours are almost all red (Default).</div>
+        <div style="font-size:0.76rem;color:#94a3b8;margin-top:6px;">C_005 (★) falls inside the Default cluster in portrait space. Its neighbours are almost all red (Default).</div>
       </div>
       <div>
-        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:var(--text-dim);margin-bottom:10px;">WHAT TABICL DOES — STEP BY STEP</div>
+        <div style="font-family:'Fira Code',monospace;font-size:0.7rem;color:#94a3b8;margin-bottom:10px;">WHAT TABICL DOES — STEP BY STEP</div>
         <div class="flow">
           <div class="flow-step" style="padding:8px 0;">
             <div class="flow-num" style="width:28px;height:28px;font-size:0.78rem;flex-shrink:0;">1</div>
@@ -1200,12 +1463,12 @@ WHY ADD, NOT CONCATENATE?
         </div>
         <div style="margin-top:10px;padding:10px 14px;background:rgba(224,92,122,.1);border:1px solid rgba(224,92,122,.3);border-radius:4px;font-family:'Fira Code',monospace;font-size:0.8rem;color:var(--accent4);">
           P(Default | C_005) ≈ 0.91<br>
-          <span style="color:var(--text-dim);font-size:0.66rem;">driven by proximity to Default cluster</span>
+          <span style="color:#94a3b8;font-size:0.66rem;">driven by proximity to Default cluster</span>
         </div>
       </div>
     </div>
-    <div style="margin-top:14px;padding:12px 16px;background:var(--surface3);border-radius:4px;font-size:0.83rem;color:var(--text-muted);">
-      <strong style="color:#eef2ff;">How is this different from KNN?</strong> In KNN, you pick the k nearest neighbours in <em>raw feature space</em> using Euclidean distance. TabICL's "proximity" is in the <em>learned 512-dim portrait space</em> — which captures distributional context and cross-feature interactions. Two customers with identical raw numbers might be far apart in portrait space if the column distributions are very different. TabICL's "nearness" is predictively meaningful in a way raw Euclidean distance is not.
+    <div style="margin-top:14px;padding:12px 16px;background:#e2e8f0;border-radius:4px;font-size:0.83rem;color:var(--text-muted);">
+      <strong style="color:#0f172a;">How is this different from KNN?</strong> In KNN, you pick the k nearest neighbours in <em>raw feature space</em> using Euclidean distance. TabICL's "proximity" is in the <em>learned 512-dim portrait space</em> — which captures distributional context and cross-feature interactions. Two customers with identical raw numbers might be far apart in portrait space if the column distributions are very different. TabICL's "nearness" is predictively meaningful in a way raw Euclidean distance is not.
     </div>
   </div>
 
@@ -1226,8 +1489,8 @@ WHY ADD, NOT CONCATENATE?
         </tbody>
       </table>
     </div>
-    <div style="padding:14px 18px;background:var(--surface3);border-radius:4px;font-size:0.84rem;color:var(--text-muted);">
-      <strong style="color:#eef2ff;">How TabICL handles this:</strong><br><br>
+    <div style="padding:14px 18px;background:#e2e8f0;border-radius:4px;font-size:0.84rem;color:var(--text-muted);">
+      <strong style="color:#0f172a;">How TabICL handles this:</strong><br><br>
       Stage 2 portraits: customers ordered by total risk. h_{C003} and h_{C001} point in the same "high-risk" direction. h_{C002} points in the opposite "low-risk" direction. h_{C005} (total risk = 2.0) falls between C_001 (1.9) and C_003 (2.1).<br><br>
       Stage 3 attention weights: α_{C003} = 0.46, α_{C001} = 0.39, α_{C004} = 0.10, α_{C002} = 0.05<br>
       → 85% of attention on Default-labelled customers, 15% on No Default<br>
@@ -1547,7 +1810,7 @@ WHY ADD, NOT CONCATENATE?
     <div style="margin-bottom:14px;color:var(--accent);font-weight:600;">// TabICL — Illustrated Deep Dive v3</div>
     <div>Paper: Qu, Holzmüller, Varoquaux, Le Morvan — TabICL: A Tabular Foundation Model for In-Context Learning on Large Data — ICML 2025 — arXiv:2502.05564</div>
     <div style="margin-top:6px;">Code: <span style="color:var(--accent2);">github.com/soda-inria/tabicl</span></div>
-    <div style="margin-top:6px;color:var(--text-dim);">All mathematics reproduced from the original paper. Amex examples and §12 deployment analysis are illustrative/editorial. Fine-tuning approaches in §12.2 are research-grade commentary, not from the original paper.</div>
+    <div style="margin-top:6px;color:#94a3b8;">All mathematics reproduced from the original paper. Amex examples and §12 deployment analysis are illustrative/editorial. Fine-tuning approaches in §12.2 are research-grade commentary, not from the original paper.</div>
   </div>
 </footer>
 </main>
